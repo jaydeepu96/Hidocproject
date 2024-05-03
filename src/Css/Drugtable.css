@@ -1,0 +1,93 @@
+.drug-list-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    border:2px solid white;
+    border-radius:5px;
+  }
+  
+  .drug-names-column{
+    width: 100%;
+    overflow-x: auto;
+    border:2px solid black;
+    border-radius:10px;
+  }
+
+  .drug-names-table-heading {
+    width: 100%;
+    border-bottom: 2px solid black; 
+    padding-bottom: 10px; 
+    text-align: center;
+  }
+    
+
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #00bcd4; 
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #00bcd4; 
+}
+
+.banner {
+    position: relative;
+    background-color: #00bcd4;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+.sub-banner {
+    position: absolute;
+    bottom: 0;
+    /* top: 80%; */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    color: #666;
+}
+
+.icon-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; 
+}
+
+  .drug-names-details{
+    width: 100%;
+    border:2px solid black;
+    border-radius:10px;
+  }
+  @media (min-width: 768px) {
+    .drug-list-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
